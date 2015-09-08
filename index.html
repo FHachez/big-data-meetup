@@ -222,15 +222,16 @@
 					<section>
 						<h2>God creates the world</h2>
 						<ul style="margin-top:70px;">
-							<li class="fragment">the <span style="color: orange;">subscribers</span> based on
+							<li class="fragment">the <span style="color: orange;">antennas</span> based on the geography</li>
+							<li class="fragment" style="margin-top:30px;">the <span style="color: orange;">subscribers</span> based on
 								<ul>
 									<li>operators + number of subs</li>
 									<li>profiles for each operator (social + mobility)</li>
+									<li>geographical distribution of the population</li>
 								</ul>
 							</li>
 							<li class="fragment" style="margin-top:30px;">the <span style="color: orange;">social graph</span> based on social profiles</li>
-							<li class="fragment" style="margin-top:30px;">the <span style="color: orange;">antennas</span> based on the geography</li>
-						</ul>
+													</ul>
 					</section>
 
 					<section data-background="resources/nature.jpg">
@@ -261,6 +262,50 @@
 					<section>
 						<img src="resources/agents/agents.007.png" style="border:none; box-shadow:none" />
 					</section>
+
+					<section>
+						<img src="resources/kafka_stream.png" style="border:none; box-shadow:none" />
+					</section>
+
+					<section>
+						<h2>Future challenges</h2>
+						<ul>
+							<li class="fragment" style="padding-top:30px"><span style="color: orange;">mobility</span><br />who is where ?</li>
+							<li class="fragment" style="padding-top:30px"><span style="color: orange;">synchronisation</span><br />is eveybody at the same time ?</li>
+						</ul>
+					</section>
+
+					<section>
+						<h2>Synchronisation : <span style="color: orange;">Async</span></h2>
+						<ul style="font-size:0.8em">
+							<li class="fragment" style="padding-top:0px">The clock sends the time to everyone</li>
+							<li class="fragment" style="padding-top:0px">Every actor advances at his own pace (his message queue)</li>
+							<li class="fragment" style="padding-top:30px">Simple</li>
+							<li class="fragment" style="padding-top:0px">But we can't make any supposition about time ...</li>
+						</ul>
+						<img src="resources/async.png" style="border:none; box-shadow:none; padding-top:30px" width="500px" class="fragment" />
+					</section>
+
+					<section>
+						<h2>Synchronisation : <span style="color: orange;">Sync</span></h2>
+						<ul style="font-size:0.8em">
+							<li class="fragment" style="padding-top:0px">The clock waits for eveybody to finish<br/>before sending the next tick</li>
+							<li class="fragment" style="padding-top:0px">Every actor advances at the same pace</li>
+							<li class="fragment" style="padding-top:30px">As slow as the slowest actor</li>
+							<li class="fragment" style="padding-top:0px">We can make suppositions about time</li>
+						</ul>
+						<img src="resources/sync.png" style="border:none; box-shadow:none; padding-top:30px" width="500px" class="fragment" />
+					</section>
+
+					<section>
+						<script async src="//platform.twitter.com/widgets.js" charset="utf-8"></script>
+
+						<h2>Synchronisation : <span style="color: orange;">Sync</span></h2>
+						<blockquote class="twitter-tweet tw-align-center" lang="en"><p lang="en" dir="ltr">Relying on synchronized clocks in a distributed system is an anti-pattern <a href="https://twitter.com/jboner">@jboner</a></p>&mdash; Nitro Engineering (@NitroEng) <a href="https://twitter.com/NitroEng/status/633835863219154944">August 19, 2015</a></blockquote>
+						<p></p>
+						<blockquote class="twitter-tweet tw-align-center" lang="en"><p lang="en" dir="ltr">The cost of maintaining the illusion of time in distributed systems increases with consistency and coherence - <a href="https://twitter.com/hashtag/reactive?src=hash">#reactive</a> by <a href="https://twitter.com/jboner">@jboner</a></p>&mdash; Nitro Engineering (@NitroEng) <a href="https://twitter.com/NitroEng/status/633827207366840320">August 19, 2015</a></blockquote>
+					</section>	
+
 				</section>
 
 
@@ -279,6 +324,7 @@
 					  </g>
 					</svg>
 					<h1>We are hiring (nerds)!</h1>
+					<p style="font-size:0.8em"> Product Owners, MEAN Stack, QA, Devops <br /> Lead Architect, Head of Engineering </p>
 					<h3>tg@ria.bi</h3>
 				</section>
 			</div>
