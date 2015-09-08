@@ -59,7 +59,7 @@
 							</li>
 							<li style="clear:right; margin-top:50px" class="fragment fade">
 								<img src="resources/RIA-Logo.png" width="180px" style="border:none; background:none; box-shadow:none; float:right;">
-								<p style="padding-top:10px; width:500px">Data Scientist<br />Software Developer</p>
+								<p style="padding-top:10px; width:500px">Data Scientist<br />Software Engineer</p>
 							</li>
 						</ul>
 					</section>
@@ -168,163 +168,80 @@
 					</section>
 					<section>
 						<h2>Genesis</h2>
-						<p>Hackathon + Photo</p>
+						<p><img src="resources/hackaton.jpg" height="500px"></p>
 					</section>
 					<section>
 						<h2>Requirements</h2>
 						<ul>
-							<li class="fragment">Be as close as possible to <span style="color: orange;">reality</span> (social behaviours, mobility paterns, activity distibutions, ...)</li>
-							<li class="fragment">Be able to simulate the <span style="color: orange;">bigest telco</span> providers (China Mobile: 800M subscribers)</li>
+							<li class="fragment" style="padding-bottom: 30px">Be as close as possible to <span style="color: orange;">reality</span><br />social behaviours, mobility paterns, activity distibutions, ...</li>
+							<li class="fragment">Be able to simulate the <span style="color: orange;">bigest telco</span> providers<br />China Mobile: 800M subscribers</li>
 						</ul>
 					</section>
 					<section>
 						<h2>What did we build?</h2>
+						<div style="margin-top:100px">
+							<div style="width:500px; float:right" class="fragment" data-fragment-index="2">
+								<h3>Nature</h3>
+								<img src="resources/akka.png" style="border:0" width="200px" /> <br/>
+								<img src="resources/kafka.png" style="border:0" width="200px" />
+							</div>
+							<div style="width:500px; margin" class="fragment" data-fragment-index="1">
+								<h3>God</h3>
+								<img src="resources/spark-logo.png" style="border:0; margin-top:30px" width="200px" />
+							</div>
+						</div>
 					</section>
+					<section>
+						<h2>What's what ?</h2>
+						<div class="fragment">
+							<p style="float:left"> <img src="resources/spark-logo.png" style="border:0;" width="150px" /> </p>
+							<p style="text-align:left; margin-left: 180px; font-size:0.8em; padding-top:70px">
+								Egnine for <b>large-scale data processing</b><br/>
+								<b>GraphX</b> is Spark's API for graph-parallel computation
+							</p>
+						</div>
+						<div class="fragment" style="clear:both">
+							<p style="float:left"> <img src="resources/akka.png" style="border:0" width="150px" /> </p>
+							<p style="text-align:left; margin-left: 180px; font-size:0.8em; padding-top:45px">
+								Framework to build <b>actor-based</b> concurrent systems
+							</p>
+
+						</div>
+						<div class="fragment" style="clear:both">
+							<p style="float:left"> <img src="resources/kafka.png" style="border:0" width="150px" /> </p>
+							<p style="text-align:left; margin-left: 180px; font-size:0.8em; padding-top:52px">
+								Distributed <b>messaging</b> system
+							</p>
+						</div>
+					</section>
+
 					<section data-background="resources/god.jpg">
 						<h1 style="color:white;">God</h1>
 					</section>
+
+					<section>
+						<h2>God creates the world</h2>
+						<ul style="margin-top:70px;">
+							<li class="fragment">the <span style="color: orange;">subscribers</span> based on
+								<ul>
+									<li>operators + number of subs</li>
+									<li>profiles for each operator (social + mobility)</li>
+								</ul>
+							</li>
+							<li class="fragment" style="margin-top:30px;">the <span style="color: orange;">social graph</span> based on social profiles</li>
+							<li class="fragment" style="margin-top:30px;">the <span style="color: orange;">antennas</span> based on the geography</li>
+						</ul>
+					</section>
+
 					<section data-background="resources/nature.jpg">
 						<h1 style="color:white;">Nature</h1>
 					</section>
+
+					<section>
+						<h2>Nature brings it to life
+					</section>
 				</section>
 
-				<section>
-					<section data-background="resources/Tesla.jpg">
-						<h1>Spark</h1>
-					</section>
-					<section>
-						<h3>MapReduce <span class="fragment fade">is like </span><span class="fragment fade">making burgers</span></h3>
-						<img width="700" style="border:none; background:none; box-shadow:none;" class="fragment fade" data-src="resources/Burger.jpg">
-					</section>
-					<section data-transition="fade">
-						<img width="800" style="border:none; background:none; box-shadow:none;" data-src="resources/MapReduce/MapReduce.001.jpg">
-					</section>
-					<section data-transition="fade">
-						<img width="800" style="border:none; background:none; box-shadow:none;" data-src="resources/MapReduce/MapReduce.002.jpg">
-					</section>
-					<section data-transition="fade">
-						<h2>MapReduce data sharing primitive</h2>
-						<img width="800" style="border:none; background:none; box-shadow:none;" data-src="resources/MapReduce/MapReduce.003.jpg">
-					</section>
-					<section>
-						<h2>Restricted programming framework</h2>
-						<blockquote style="width: 100%;" cite="http://www.cs.berkeley.edu/~matei/papers/2010/hotcloud_spark.pdf">
-							&ldquo;<strong>MapReduce</strong> tasks must be written as <strong>acyclic dataflow programs</strong>, i.e. a stateless mapper followed by a stateless reducer, that are executed by a batch job scheduler.
-							<br>This <strong>paradigm</strong> makes repeated querying of datasets difficult and <strong>imposes limitations</strong> that are felt in fields such as machine learning, where <strong>iterative algorithms</strong> that revisit a single working set multiple times are the norm.&rdquo;
-							<br>&mdash; <a href="http://www.cs.berkeley.edu/~matei/papers/2010/hotcloud_spark.pdf">Zaharia, Chowdhury, Franklin, Shenker, Stoica</a>
-						</blockquote>
-					</section>
-					<section data-transition="fade">
-						<img width="800" style="border:none; background:none; box-shadow:none;" data-src="resources/MapReduce/MapReduce.004.jpg">
-					</section>
-					<section data-transition="fade">
-						<img width="800" style="border:none; background:none; box-shadow:none;" data-src="resources/MapReduce/MapReduce.005.jpg">
-					</section>
-					<section style="font-size: 80%;">
-						<h2>Resilient Distributed Dataset (RDD)</h2>
-						<p>
-							<h5 style="text-align: left;">Restricted form of distributed shared memory:</h5>
-							<ul>
-								<li>Immutable, partitioned data set.</li>
-								<li>Can only be build through coarse-grained deterministic transformations (map, filter, join, …). These are operations that are applied to all of the elements of the data set at once.</li>
-							</ul>
-						</p>
-						<p>
-							<h5 style="text-align: left;">Efficient fault recovery using lineage:</h5>
-							<ul>
-								<li>Remember the graph of transformation applied to each RDD.</li>
-								<li>When is lost simply recompute lost fragment of the execution graph.</li>
-							</ul>
-						</p>
-					</section>
-					<section>
-						<h2 style="margin-bottom:100px"><span class="orange">Functional programming</span><br />with Scala <span class="orange">is ideal</span> for Spark</h2>
-							<p style="margin-bottom:30px" class="fragment fade">The MapReduce model is inspired by FP</p>
-							<p class="fragment fade">Scala is a great trade-off between FP and OOP</p>
-					</section>
-					<section>
-						<table style="font-size: 80%;">
-							<thead>
-								<tr><th>Transformations</th><th>Actions</th></tr>
-							</thead>
-							<tbody>
-								<tr>
-									<td>
-										map<br>filter<br>flatMap<br>join<br>union<br>distinct<br>groupByKey<br>aggregateByKey<br>sortByKey<br>cogroup<br>sample<br>intersection<br>...
-									</td>
-									<td>
-										reduce<br>collect<br>count<br>first<br>take<br>takeSample<br>takeOrdered<br>countByKey<br>foreach<br>saveAsParquetFile<br>saveAsTextFile<br>saveAsObjectFile<br>...
-									</td>
-								</tr>
-							</tbody>
-						</table>
-					</section>
-					<section>
-						<h2>Log Mining example</h2>
-<pre><code class="scala"> val file = spark.textFile("hdfs://...")
- val errors = file.filter(line => line.contains("ERROR"))
- errors.cache()
- // Count errors mentioning MySQL
- errors.filter(line => line.contains("MySQL")).count()
- // Count errors mentioning Windows should be much faster
- errors.filter(line => line.contains("Windows")).count()
-</code></pre>
-					<p style="position: relative;">
-						<p style="position: absolute;" class="fragment"><img width="600" style="border:none; background:none; box-shadow:none;" data-src="resources/MapReduce/MapReduce.006.jpg"></p>
-						<p style="position: absolute;" class="fragment"><img width="600" style="border:none; background:none; box-shadow:none;" data-src="resources/MapReduce/MapReduce.007.jpg"></p>
-						<p style="position: absolute;" class="fragment"><img width="600" style="border:none; background:none; box-shadow:none;" data-src="resources/MapReduce/MapReduce.008.jpg"></p>
-						<p style="position: absolute;" class="fragment"><img width="600" style="border:none; background:none; box-shadow:none;" data-src="resources/MapReduce/MapReduce.009.jpg"></p>
-						<p style="position: absolute;" class="fragment"><img width="600" style="border:none; background:none; box-shadow:none;" data-src="resources/MapReduce/MapReduce.010.jpg"></p>
-					</p>
-					</section>
-					<section>
-						<h2>Logistic Regression Example</h2>
-						<pre><code class="scala"> val points = spark.textFile(...).map(parsePoint).cache()
- var w = Vector.random(D) // current separating plane
- for (i <- 1 to ITERATIONS) {
-	 val gradient = points.map(p =>
- 		 (1 / (1 + exp(-p.y*(w dot p.x))) - 1) * p.y * p.x
- 	 ).reduce(_ + _)
- 	w -= gradient
- }
- println("Final separating plane: " + w)</code></pre>
-						<img class="fragment fade" style="border:none; background:none; box-shadow:none;" data-src="resources/logistic-regression.png">
-					</section>
-					<section>
-						<h2>Spark Ecosystem</h2>
-						<img width="600" style="border:none; background:none; box-shadow:none;" data-src="resources/spark-stack.png">
-					</section>
-					<section>
-						<img width="400" style="border:none; background:none; box-shadow:none;" data-src="resources/spark-sql.png">
-						<pre class="fragment fade"><code class="scala"> // Create a SchemaRDD from a parquet file
- val people = parquetFile("people.parquet")
-
- // Register it as a table to use in SQL statements
- people.registerTempTable("people")
- val twenties =
-   sql("SELECT name FROM people WHERE age >= 20 AND age <= 29")
-
- twenties.map(t => "Name: " + t(0)).collect().foreach(println)</code></pre>
-					</section>
-					<section>
-						<img width="400" style="border:none; background:none; box-shadow:none;" data-src="resources/spark-sql.png">
-						<h3>Catalyst : A <span class="orange">Query Optimizer</span> for Spark</h3>
-						<p style="margin-top:80px; margin-bottom:-10px" class="fragment fade">Filter push down</p>
-						<img width="700px" src="resources/filter-push-down.png" style="border:none; background:none; box-shadow:none;" class="fragment fade">
-					</section>
-					<section>
-						<h2>Spark Drawbacks</h2>
-						<ul>
-							<li>Lack of maturity</li>
-							<li>Sometimes less efficient then specialized system</li>
-							<li>Difficult to debug
-								<ul>
-									<li>lazyness & optimisation</li>
-									<li>limited monitoring tools</li>
-							</li>
-						</ul>
-					</section>
-				</section>
 
 				<section data-background="resources/sayBigData.jpg">
 				</section>
