@@ -1,3 +1,7 @@
+# Link to slides
+
+This presentation was done with reveal.js, you can check it out here : https://realimpactanalytics.github.io/big-data-meetup/#/
+
 # reveal.js [![Build Status](https://travis-ci.org/hakimel/reveal.js.png?branch=master)](https://travis-ci.org/hakimel/reveal.js)
 
 A framework for easily creating beautiful presentations using HTML. [Check out the live demo](http://lab.hakim.se/reveal-js/).
