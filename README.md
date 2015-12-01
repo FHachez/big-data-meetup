@@ -1,6 +1,6 @@
 # Link to slides
 
-This presentation was done with reveal.js, you can check it out here : https://realimpactanalytics.github.io/big-data-meetup/#/
+This presentation was done with reveal.js, you can check it out here : https://fhachez.github.io/big-data-meetup/#/
 
 # reveal.js [![Build Status](https://travis-ci.org/hakimel/reveal.js.png?branch=master)](https://travis-ci.org/hakimel/reveal.js)
 
