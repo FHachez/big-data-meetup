@@ -41,135 +41,153 @@
 			<!-- Any section element inside of this container is displayed as a slide -->
 			<div class="slides">
 					<section>
-					<h2>Telco simulator <br />with <span class="orange">Spark + Akka + Kafka</span></h2>
-					<h3><a href="https://realimpactanalytics.com/en"><i class="fa fa-at fa-1x"></i> Real Impact Analytics</a></h3>
+					<h2>Country-scale Telecom simulator<br />with <span style="color: orange">Spark + Akka + Kafka</span></h2>
 					<h4>
-						<a target="_blank" style="color: black;" href="https://be.linkedin.com/in/thoralfgutierrez">Thoralf Gutierrez</a>
-					</4>
+						<a target="_blank" style="color: black;" href="https://be.linkedin.com/in/floranhachez">Floran Hachez</a>
+					</h4>
 				</section>
 
 				<section style="font-size: 80%;">
 					<section>
 					  <h2>Who am I?</h2>
-						<img src="resources/thoralf.jpg" width="300px" style="float:left; border:none; background:none; box-shadow:none;">
-						<ul style="list-style-type: none; margin-left:-60px; margin-top:20px">
-							<li class="fragment fade">
-								<img src="resources/uclouvain.gif" width="100px" style="border:none; background:none; box-shadow:none; float:right;">
-								<p style="padding-top:20px">Computer Engineering<br />Artificial Intelligence</p>
+						<img src="resources/floran.jpg" width="300px" style="float:left; border:none; background:none; box-shadow:none; margin-top:50px">
+						<ul style="list-style-type: none; margin-left:-60px; margin-top:0px">
+							<li class="">
+								<img src="resources/uclouvain.gif" width="100px" style="border:none; background:none; box-shadow:none; float:right;padding-top:20px">
+                                <p style="padding-top:20px"> <b>Computer Engineering </b>
+                                    <br /> <span style="font-size: 80%"> Artificial Intelligence and Applied Mathematics </span></p>
 							</li>
-							<li style="clear:right; margin-top:50px" class="fragment fade">
-								<img src="resources/RIA-Logo.png" width="180px" style="border:none; background:none; box-shadow:none; float:right;">
-								<p style="padding-top:10px; width:500px">Data Scientist<br />Software Engineer</p>
+							<li class="">
+								<img src="resources/trinity.jpeg" width="100px" style="border:none; background:none; box-shadow:none; float:right;padding-top:10px">
+                                <p style="padding-top:20px"><b> Erasmus student</b>
+                                    <br /><span style="font-size: 80%"> For one semester </span></p>
+							</li>
+							<li style="clear:right; margin-top:50px" class="">
+								<img src="resources/RIA-Logo.png" width="180px" style="border:none; background:none; box-shadow:none; float:right;margin-top:-7px">
+                                <p style="padding-top:0px;"> <b>Summer internship</b> </p>
 							</li>
 						</ul>
 					</section>
 				</section>
 
 				<section>
-					<section data-state="uncenterDarkTheme" data-background="resources/ria_2.png">
-						<!--<h2>Where do I work?</h2>-->
-					</section>
-					<section>
-						<h1>Data</h1>
-						<table>
-							<tbody>
-								<tr> <td> <i class="fa fa-phone fa-1x"></i> </td> <td> Call Detail Record (CDR) </td> </tr>
-								<tr> <td> <i class="fa fa-clock-o fa-1x"></i> </td> <td> Date &mdash; Time &mdash; Duration </td> </tr>
-								<tr> <td> <i class="fa fa-dollar fa-1x"></i> </td> <td> Billing &mdash; Recharge &mdash; Money transfer </td> </tr>
-								<tr> <td> <i class="fa fa-group fa-1x"></i> </td> <td> Social Network </td> </tr>
-								<tr> <td> <i class="fa fa-globe fa-1x"></i> </td> <td> Antenna's geolocalisation </td> </tr>
-								<tr> <td> <i class="fa fa-signal fa-1x"></i> </td> <td> Network information </td> </tr>
-								<tr> <td> <i class="fa fa-file-code-o fa-1x"></i> </td> <td> Data usage &mdash; URL &mdash; App </td> </tr>
-							</tbody>
-						</table>
-					</section>
-					<section>
-						<h1>Missions</h1>
-						<table style="font-size: 80%;">
-							<thead>
-								<tr>
-									<th>Operational optimization</th>
-									<th>Campaign managment</th>
-								</tr>
-							</thead>
-							<tbody>
-								<tr>
-									<td>
-										Drive field actions<br>
-										Improve network coverage<br>
-										Performance tracking<br>
-										Stock management<br>
-										Managed services<br>
-										Data commercialization
-									</td>
-									<td>
-										Improve marketing<br>
-										Strengthen subscriber acquisitions<br>
-									  Acquire competitor market<br>
-										Increase cross-sales<br>
-										Reduce churn<br>
-										Target high value subscribers<br>
-										A/B test campaign messages<br>
-										Compute campaign's ROI
-									</td>
-								</tr>
-							</tbody>
-						</table>
-					</section>
-					<section>
-						<h2>Treating telco/banking data of 300,000,000 subscribers daily</h2>
-					</section>
-					<section data-state="worldTour">
-						<h2>Active in 35+ countries</h2>
-						<div class="worldTourViz"></div>
-						<h4 class="countryName"></h4>
-					</section>
-					<section data-state="worldRatio">
-						<h2>Is this a lot?</h2>
-						<div class="worldRatioViz"></div>
-						<h4 class="ratio"></h4>
-						<h4>4.1% of world population</h4>
-					</section>
-					<section>
-						<h2>10% of africa's population</h2>
-						<br>
-						<i class="fa fa-male fa-2x"></i>
-						<i class="fa fa-male fa-2x"></i>
-						<i style="color: #f49423;" class="fa fa-male fa-2x"></i>
-						<i class="fa fa-male fa-2x"></i>
-						<i class="fa fa-male fa-2x"></i>
-						<i class="fa fa-male fa-2x"></i>
-						<i class="fa fa-male fa-2x"></i>
-						<i class="fa fa-male fa-2x"></i>
-						<i class="fa fa-male fa-2x"></i>
-						<i class="fa fa-male fa-2x"></i>
-					</section>
-					<section>
-						<h2>Still Room for growth</h2>
-					</section>
-					<section>
-						<h2>What do we struggle with?</h2>
-						<ul>
-							<li class="fragment">Benchmarking</li>
-							<li class="fragment">Stress testing for data quantity increase</li>
-							<li class="fragment">Prepare for worst case scenario</li>
-							<li class="fragment">Convince prospect</li>
-						</ul>
-					</section>
-					<section>
-						<h2>Solution?</h2>
-						<p class="fragment"> Simulate a real world telecommunication provider </p>
-					</section>
-				</section>
-
-				<section>
-					<section data-background="resources/telcoSim.jpg">
-						<h1 style="color:white;">Telco Simulator</h1>
-					</section>
-					<section>
-						<h2>Genesis</h2>
-						<p><img src="resources/hackaton.jpg" height="500px"></p>
-					</section>
+                    <section style="font-size: 100%;">
+                        <h2>What am I going to talk about ?</h2>
+                        <ul style="width: 500px; text-align: left; list-style-type: circle; margin-left:-0px; margin-top:40px">
+                            <li class="">
+                                <img src="resources/akka.png" width="100px" style="border:none; background:none; box-shadow:none; float:right; margin-top:7px"> 
+                                <p style="margin-top:-0px; float: center"> Principle of <br/> </p>
+                            </li>
+                            <li style="clear:right">
+                                <img src="resources/RIA-Logo.png" width="180px" style="border:none; background:none; box-shadow:none; float:right; margin-top:5px">
+                                <p style="margin-top:-0px; float: center">The Problem</p>
+                            </li>
+                            <li style="clear:right" class="">
+                                <p style="padding-top:0px;">Telco Simulator</p>
+                            </li>
+                        </ul>
+                    </section>
+                </section>
+                <section >
+                    <section >
+                        <img src="resources/akka.png" width="500px" style="float: center; border:none; box-shadow:none"> 
+                    </section>
+                </section>
+                <section>
+                    <section data-state="uncenterDarkTheme" data-background="resources/ria_2.png">
+                        <!--<h2>Where do I work?</h2>-->
+                    </section>
+                    <section>
+                        <h1>Data</h1>
+                        <table>
+                            <tbody>
+                                <tr> <td> <i class="fa fa-phone fa-1x"></i> </td> <td> Call Detail Record (CDR) </td> </tr>
+                                <tr> <td> <i class="fa fa-clock-o fa-1x"></i> </td> <td> Date &mdash; Time &mdash; Duration </td> </tr>
+                                <tr> <td> <i class="fa fa-dollar fa-1x"></i> </td> <td> Billing &mdash; Recharge &mdash; Money transfer </td> </tr>
+                                <tr> <td> <i class="fa fa-group fa-1x"></i> </td> <td> Social Network </td> </tr>
+                                <tr> <td> <i class="fa fa-globe fa-1x"></i> </td> <td> Antenna's geolocalisation </td> </tr>
+                                <tr> <td> <i class="fa fa-signal fa-1x"></i> </td> <td> Network information </td> </tr>
+                                <tr> <td> <i class="fa fa-file-code-o fa-1x"></i> </td> <td> Data usage &mdash; URL &mdash; App </td> </tr>
+                            </tbody>
+                        </table>
+                    </section>
+                    <section>
+                        <h1>Missions</h1>
+                        <table style="font-size: 80%;">
+                            <thead>
+                                <tr>
+                                    <th>Operational optimization</th>
+                                    <th>Campaign managment</th>
+                                </tr>
+                            </thead>
+                            <tbody>
+                                <tr>
+                                    <td>
+                                        Drive field actions<br>
+                                        Improve network coverage<br>
+                                        Performance tracking<br>
+                                        Stock management<br>
+                                        Managed services<br>
+                                        Data commercialization
+                                    </td>
+                                    <td>
+                                        Improve marketing<br>
+                                        Strengthen subscriber acquisitions<br>
+                                        Acquire competitor market<br>
+                                        Increase cross-sales<br>
+                                        Reduce churn<br>
+                                        Target high value subscribers<br>
+                                        A/B test campaign messages<br>
+                                        Compute campaign's ROI
+                                    </td>
+                                </tr>
+                            </tbody>
+                        </table>
+                    </section>
+                    <section>
+                        <h2>Treating telco/banking data of 300,000,000 subscribers daily</h2>
+                    </section>
+                    <section data-state="worldTour">
+                        <h2>Active in 35+ countries</h2>
+                        <div class="worldTourViz"></div>
+                        <h4 class="countryName"></h4>
+                    </section>
+                    <section data-state="worldRatio">
+                        <h2>Is this a lot?</h2>
+                        <div class="worldRatioViz"></div>
+                        <h4 class="ratio"></h4>
+                        <h4>4.1% of world population</h4>
+                    </section>
+                    <section>
+                        <h2>10% of africa's population</h2>
+                        <br>
+                        <i class="fa fa-male fa-2x"></i>
+                        <i class="fa fa-male fa-2x"></i>
+                        <i style="color: #f49423;" class="fa fa-male fa-2x"></i>
+                        <i class="fa fa-male fa-2x"></i>
+                        <i class="fa fa-male fa-2x"></i>
+                        <i class="fa fa-male fa-2x"></i>
+                        <i class="fa fa-male fa-2x"></i>
+                        <i class="fa fa-male fa-2x"></i>
+                        <i class="fa fa-male fa-2x"></i>
+                        <i class="fa fa-male fa-2x"></i>
+                    </section>
+                    <section>
+                        <h2>Still Room for growth</h2>
+                    </section>
+                    <section>
+                        <h2>What do we struggle with?</h2>
+                        <ul>
+                            <li class="fragment">Benchmarking</li>
+                            <li class="fragment">Stress testing for data quantity increase</li>
+                            <li class="fragment">Prepare for worst case scenario</li>
+                            <li class="fragment">Convince prospect</li>
+                        </ul>
+                    </section>
+                    <section>
+                        <h2>Solution?</h2>
+                        <p class="fragment"> Simulate a real world telecommunication provider </p>
+                    </section>
 					<section>
 						<h2>Requirements</h2>
 						<ul>
@@ -178,6 +196,16 @@
 							<li class="fragment">Be able to simulate the <span style="color: orange;">bigest telco</span> providers<br />
 								<span style="color: grey;">China Mobile: 800M subscribers<br /></li>
 						</ul>
+					</section>
+                </section>
+
+				<section>
+					<section data-background="resources/telcoSim.jpg">
+						<h1 style="color:white;">Telco Simulator</h1>
+					</section>
+					<section>
+						<h2>Genesis</h2>
+						<p><img src="resources/hackaton.jpg" height="500px"></p>
 					</section>
 					<section>
 						<h2>What did we build?</h2>
@@ -331,9 +359,7 @@
 					    <path d="m445.72406,86.045715c-37.811279,0.253937 -74.24823,12.123665 -111.362091,16.8703c-15.489655,1.981148 -31.454407,2.466522 -46.970093,0.624634c-20.629822,-2.449356 -40.603043,-8.955338 -61.219223,-11.871849c-18.424255,-2.604774 -37.078735,-5.326279 -55.618668,-5.434509c-32.400101,-0.192863 -63.735413,9.994659 -95.497093,15.495583c0,9.330353 -1.888023,21.307236 2.860909,27.865662c4.898636,6.764206 13.161667,12.950882 15.304817,22.117264c5.082314,21.740097 12.298714,43.050537 21.525597,63.48024c4.483597,9.928223 12.946198,16.849899 22.396454,21.61795c22.757065,11.481857 49.691574,13.170486 74.656403,9.559631c35.552444,-5.141983 54.840805,-31.9319 69.555923,-62.542679c5.507599,-12.442932 6.122192,-26.803879 13.376007,-38.176422c4.307831,-6.753479 14.312561,-3.910828 21.462097,-3.935516c7.150635,-0.024628 13.211548,11.919037 15.429535,19.869354c7.853668,28.134583 20.947266,57.984634 46.971222,72.725891c38.861298,22.014374 100.085052,17.896744 125.299316,-21.805481c9.867584,-15.538422 12.592499,-34.3909 17.543243,-51.982269c3.013977,-10.710403 5.707092,-23.47908 16.425049,-29.366791c4.32489,-2.376541 1.289368,-11.857956 1.927734,-17.369583c0.696289,-6.004509 2.03772,-11.316864 -6.470276,-12.495476c-14.838745,-2.058281 -29.232941,-8.315689 -44.4198,-10.433968c-14.391998,-2.007927 -28.492554,-4.909439 -43.177063,-4.811966zm-249.973877,9.996819c10.733856,-0.06752 21.421265,0.7211 31.8535,2.936897c62.158127,13.203697 63.414536,38.923218 37.826004,92.096985c-20.850906,43.326981 -64.043854,54.183075 -107.566757,43.797348c-20.063965,-4.78627 -33.782387,-18.85141 -40.252647,-38.112137c-6.829735,-20.328979 -11.994827,-41.926544 -10.825729,-63.293793c1.567093,-28.610336 33.790306,-32.631584 56.863731,-35.238449c10.587601,-1.195755 21.36911,-2.118286 32.101898,-2.186852zm226.954834,0c10.733887,0.068565 21.515411,0.991096 32.103027,2.186852c23.072235,2.606865 55.29776,6.628113 56.86261,35.238449c1.169067,21.367249 -3.996063,42.964813 -10.825714,63.293793c-6.470337,19.260727 -20.188721,33.325867 -40.251556,38.112137c-43.521759,10.385727 -86.715851,-0.470367 -107.567902,-43.797348c-25.588501,-53.173767 -24.330963,-78.893288 37.827148,-92.096985c10.432281,-2.215797 21.119659,-3.004417 31.852386,-2.936897z" stroke-width="5" stroke="#000000" fill="#000000" id="path2830"/>
 					  </g>
 					</svg>
-					<h1>We are hiring (nerds)!</h1>
-					<p style="font-size:0.8em"> Product Owners, MEAN Stack, QA, Devops <br /> Lead Architect, Head of Engineering </p>
-					<h3>tg@ria.bi</h3>
+					<h1>Thank you for your attention</h1>
 				</section>
 			</div>
 
