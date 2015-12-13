@@ -7,7 +7,7 @@
 		<title>BigData.be Meetup</title>
 
 		<meta name="description" content="Big data technologies used at Real Impact Analytics">
-		<meta name="author" content="Karim Douieb">
+		<meta name="author" content="Floran Hachez">
 
 		<meta name="apple-mobile-web-app-capable" content="yes" />
 		<meta name="apple-mobile-web-app-status-bar-style" content="black-translucent" />
@@ -15,7 +15,9 @@
 		<meta name="viewport" content="width=device-width, initial-scale=1.0, maximum-scale=1.0, user-scalable=no, minimal-ui">
 
 		<link rel="stylesheet" href="css/reveal.css">
+		<link rel="stylesheet" href="css/theme/beige.css" id="theme">
 		<link rel="stylesheet" href="css/theme/karim.css" id="theme">
+		<link rel="stylesheet" href="css/theme/floran.css" id="theme">
 		<link rel="stylesheet" href="css/viz/viz.css">
 		<link rel="stylesheet" href="node_modules/font-awesome/css/font-awesome.css">
 		<!-- For syntax highlighting -->
@@ -50,20 +52,20 @@
 				<section style="font-size: 80%;">
 					<section>
 					  <h2>Who am I?</h2>
-						<img src="resources/floran.jpg" width="300px" style="float:left; border:none; background:none; box-shadow:none; margin-top:50px">
+						<img class="presentationImage" src="resources/floran.jpg" width="300px" style="float:left; margin-top:50px">
 						<ul style="list-style-type: none; margin-left:-60px; margin-top:0px">
 							<li class="">
-								<img src="resources/uclouvain.gif" width="100px" style="border:none; background:none; box-shadow:none; float:right;padding-top:20px">
+								<img class="presentationImage" src="resources/uclouvain.gif" width="100px" style="float:right;padding-top:20px">
                                 <p style="padding-top:20px"> <b>Computer Engineering </b>
                                     <br /> <span style="font-size: 80%"> Artificial Intelligence and Applied Mathematics </span></p>
 							</li>
 							<li class="">
-								<img src="resources/trinity.jpeg" width="100px" style="border:none; background:none; box-shadow:none; float:right;padding-top:10px">
+								<img class="presentationImage" src="resources/trinity.jpeg" width="100px" style="float:right;padding-top:10px">
                                 <p style="padding-top:20px"><b> Erasmus student</b>
                                     <br /><span style="font-size: 80%"> For one semester </span></p>
 							</li>
 							<li style="clear:right; margin-top:50px" class="">
-								<img src="resources/RIA-Logo.png" width="180px" style="border:none; background:none; box-shadow:none; float:right;margin-top:-7px">
+								<img class="presentationImage" src="resources/RIA-Logo.png" width="180px" style="float:right;margin-top:-7px">
                                 <p style="padding-top:0px;"> <b>Summer internship</b> </p>
 							</li>
 						</ul>
@@ -75,41 +77,147 @@
                         <h2>What am I going to talk about ?</h2>
                         <ul style="width: 500px; text-align: left; list-style-type: circle; margin-left:-0px; margin-top:40px">
                             <li class="">
-                                <img src="resources/akka.png" width="100px" style="border:none; background:none; box-shadow:none; float:right; margin-top:7px"> 
-                                <p style="margin-top:-0px; float: center"> Principle of <br/> </p>
+                                <p style="margin-top:-0px; "> Principles of <strong style="color:orange"> Kafka </strong> <br/> </p>
+                            </li>
+                            <li class="">
+                                <p style="margin-top:-0px; "> Principles of <strong style="color:orange"> Akka </strong> <br/> </p>
                             </li>
                             <li style="clear:right">
-                                <img src="resources/RIA-Logo.png" width="180px" style="border:none; background:none; box-shadow:none; float:right; margin-top:5px">
-                                <p style="margin-top:-0px; float: center">The Problem</p>
+                                <p style="margin-top:-0px; ">The Problem</p>
                             </li>
                             <li style="clear:right" class="">
-                                <p style="padding-top:0px;">Telco Simulator</p>
+                                <p style="padding-top:0px;">The Solution</p>
                             </li>
                         </ul>
                     </section>
                 </section>
+
                 <section >
                     <section >
-                        <img src="resources/akka.png" width="500px" style="float: center; border:none; box-shadow:none"> 
+                        <img class="presentationImage" src="resources/kafka.png" width="500px" style="float: center;"> 
+                    </section>
+                    <section >
+                        <h2 > <strong style="color:orange">Apache Kafka</strong> is</br> publish-subscribe messaging rethought as a distributed commit log.
+                       </h2> 
+                    </section>
+                    <section >
+                        <h2 > <strong style="color:orange">Publish-subscribe messaging</strong> rethought as a distributed commit log.
+                       </h2> 
+                    </section>
+                    <section >
+                        <h2 > Publish-subscribe messaging rethought as a <strong style="color:orange">distributed</strong> commit log.
+                       </h2> 
+                    </section>
+                    <section >
+                        <h2 > Publish-subscribe messaging rethought as a distributed<strong style="color:orange"> commit log</strong>.
+                       </h2> 
+                    </section>
+
+					<section>
+                        <h2 class="" >Use cases</h2>
+                        <ul style="float:center; width:600px">
+                            <li class="useCase">Messaging</li>    
+                            <li class="useCase">Website activity tracking </li>    
+                            <li class="useCase">Stream processing as link between different processing stage</li>    
+                            <li class="useCase">Log aggregation</li>    
+                            <li class="useCase">Event sourcing</li>    
                     </section>
                 </section>
+
+                <section >
+                    <section >
+                        <img class="presentationImage" src="resources/akka.png" width="500px" style="float: center;"> 
+                    </section>
+                    <section >
+                        <h2>Allows us to build </br> reactive, parallel, distributed and resilient applications  </h2>
+                    </section>
+                    
+                    <!-- ACTOR -->
+					<section data-transition="fade-in">
+                        <h1 class="slideTitle" >Actor</h1>
+                        <img class="presentationImage" src="./resources/ActorMailBox.png" width="800px"> 
+                    </section>
+					<section data-transition="fade-in">
+                        <h1 class="slideTitle" >Actor</h1>
+                        <img class="presentationImage" src="./resources/ActorReceive.png" width="800px"> 
+                    </section>
+					<section data-transition="fade-in">
+                        <h1 class="slideTitle" >Actor</h1>
+                        <img class="presentationImage" src="./resources/ActorChangeState.png" width="800px"> 
+                    </section>
+					<section data-transition="fade-in">
+                        <h1 class="slideTitle" >Actor</h1>
+                        <img class="presentationImage" src="./resources/ActorSend.png" width="800px"> 
+                    </section>
+
+                    <!-- ACTOR Hierarchy-->
+					<section>
+                        <h1 class="slideTitle" >Actor Hierarchy</h1>
+                        <img class="presentationImage" src="./resources/ActorHierarchy.png" width="600px"> 
+                    </section>
+					<section data-transition="fade-in">
+                        <h1 class="slideTitle" >Actor Hierarchy</h1>
+                        <img class="presentationImage" src="./resources/ActorHierarchyPath.png" width="600px"> 
+                        <ul style="float:center; padding-left:7%;">
+                            <li>Actor reference</li>    
+                            <li>Actor path: <span style="color:red;">/User/Master/Worker3 </span> </li>    
+                        </ul>
+                    </section>
+
+					<section>
+                        <h2 class="slideTitle" >Reactive</h2>
+                    </section>
+					<section>
+                        <h2 class="slideTitle" >Parallel</h2>
+                        <ul style="width:800px">
+                            <li class="useCase">The actors run <strong style="color:orange"> concurrently </strong> </li>
+                            <li class="useCase">An actor runs <strong style="color:orange"> on one thread at a time </strong> </li>
+                            <li class="useCase">We don't need <strong style="color:orange"> mutex, semaphore and monitor</strong> </li>
+                            <li class="useCase">Messages from one actor to another are<strong style="color:orange"> order</strong> </li>
+                            <li class="useCase">At <strong style="color:orange"> most once</strong> delivery</li>
+                        </ul>
+                    </section>
+					<section>
+                        <h2 class="slideTitle" >Distributed</h2>
+                        <ul>
+                            <li>Design for remote</li>
+                            <li>Location transparency</li>
+                            <ul>
+                                <li class="useCase">Communicate with other <strong style="color:orange"> computer</strong> </li>
+                                <li class="useCase">Create actors in other <strong style="color:orange"> JVMs</strong> </li>
+                                <li class="useCase">Driven by <strong style="color:orange"> configuration</strong> </li>
+                            </ul>
+                            <li class="useCase">Messages from one actor to another are<strong style="color:orange"> order</strong> </li>
+                            <li class="useCase">At <strong style="color:orange"> most once</strong> delivery</li>
+                        </ul>
+                    </section>
+					<section>
+                        <h2 class="slideTitle" >Resilient</h2>
+                        <p>If there is a problem, an actor can :</p>
+                        <ul>
+                            <li class="useCase">Resume</li>
+                            <li class="useCase">Restart</li>
+                            <li class="useCase">Kill itself</li>
+                            <li class="useCase">Escalate the problem to the parent</li>
+                        </ul>
+                    </section>
+
+					<section>
+                        <h2 class="" >Use cases</h2>
+                        <ul style="float:center; width:600px">
+                            <li class="useCase">Spark: Master/Worker</li>    
+                            <li class="useCase">
+                                Web server 
+                            </li>    
+                            <li class="useCase">Simulation</li>    
+                            <li class="useCase">IOT</li>    
+                            <li class="useCase">...</li>    
+                    </section>
+
+                </section>
+
                 <section>
                     <section data-state="uncenterDarkTheme" data-background="resources/ria_2.png">
-                        <!--<h2>Where do I work?</h2>-->
-                    </section>
-                    <section>
-                        <h1>Data</h1>
-                        <table>
-                            <tbody>
-                                <tr> <td> <i class="fa fa-phone fa-1x"></i> </td> <td> Call Detail Record (CDR) </td> </tr>
-                                <tr> <td> <i class="fa fa-clock-o fa-1x"></i> </td> <td> Date &mdash; Time &mdash; Duration </td> </tr>
-                                <tr> <td> <i class="fa fa-dollar fa-1x"></i> </td> <td> Billing &mdash; Recharge &mdash; Money transfer </td> </tr>
-                                <tr> <td> <i class="fa fa-group fa-1x"></i> </td> <td> Social Network </td> </tr>
-                                <tr> <td> <i class="fa fa-globe fa-1x"></i> </td> <td> Antenna's geolocalisation </td> </tr>
-                                <tr> <td> <i class="fa fa-signal fa-1x"></i> </td> <td> Network information </td> </tr>
-                                <tr> <td> <i class="fa fa-file-code-o fa-1x"></i> </td> <td> Data usage &mdash; URL &mdash; App </td> </tr>
-                            </tbody>
-                        </table>
                     </section>
                     <section>
                         <h1>Missions</h1>
@@ -144,36 +252,30 @@
                             </tbody>
                         </table>
                     </section>
-                    <section>
-                        <h2>Treating telco/banking data of 300,000,000 subscribers daily</h2>
-                    </section>
+
                     <section data-state="worldTour">
-                        <h2>Active in 35+ countries</h2>
-                        <div class="worldTourViz"></div>
-                        <h4 class="countryName"></h4>
+                        <h1>Size</h1>
+                        <ul>
+                            <li class="useCase">Active in <strong style="color:orange">35+ </strong> countries</li>
+                            <li class="useCase">Treating telecom data of <strong style="color:orange">300,000,000 subscribers</strong> daily</li>
+                            <li class="useCase"><strong style="color:orange">4% </strong> of world population</li>
+                            <li class="useCase"><strong style="color:orange">10% </strong> of Africa's population</li>
+                        </ul>
                     </section>
-                    <section data-state="worldRatio">
-                        <h2>Is this a lot?</h2>
-                        <div class="worldRatioViz"></div>
-                        <h4 class="ratio"></h4>
-                        <h4>4.1% of world population</h4>
-                    </section>
+
                     <section>
-                        <h2>10% of africa's population</h2>
-                        <br>
-                        <i class="fa fa-male fa-2x"></i>
-                        <i class="fa fa-male fa-2x"></i>
-                        <i style="color: #f49423;" class="fa fa-male fa-2x"></i>
-                        <i class="fa fa-male fa-2x"></i>
-                        <i class="fa fa-male fa-2x"></i>
-                        <i class="fa fa-male fa-2x"></i>
-                        <i class="fa fa-male fa-2x"></i>
-                        <i class="fa fa-male fa-2x"></i>
-                        <i class="fa fa-male fa-2x"></i>
-                        <i class="fa fa-male fa-2x"></i>
-                    </section>
-                    <section>
-                        <h2>Still Room for growth</h2>
+                        <h1>Data</h1>
+                        <table>
+                            <tbody>
+                                <tr> <td> <i class="fa fa-phone fa-1x"></i> </td> <td> Call Detail Record (CDR) </td> </tr>
+                                <tr> <td> <i class="fa fa-clock-o fa-1x"></i> </td> <td> Date &mdash; Time &mdash; Duration </td> </tr>
+                                <tr> <td> <i class="fa fa-dollar fa-1x"></i> </td> <td> Billing &mdash; Recharge &mdash; Money transfer </td> </tr>
+                                <tr> <td> <i class="fa fa-group fa-1x"></i> </td> <td> Social Network </td> </tr>
+                                <tr> <td> <i class="fa fa-globe fa-1x"></i> </td> <td> Antenna's geolocalisation </td> </tr>
+                                <tr> <td> <i class="fa fa-signal fa-1x"></i> </td> <td> Network information </td> </tr>
+                                <tr> <td> <i class="fa fa-file-code-o fa-1x"></i> </td> <td> Data usage &mdash; URL &mdash; App </td> </tr>
+                            </tbody>
+                        </table>
                     </section>
                     <section>
                         <h2>What do we struggle with?</h2>
@@ -221,30 +323,6 @@
 							</div>
 						</div>
 					</section>
-					<section>
-						<h2>What's what ?</h2>
-						<div class="fragment">
-							<p style="float:left"> <img src="resources/spark-logo.png" style="border:0; box-shadow:none" width="150px" /> </p>
-							<p style="text-align:left; margin-left: 180px; font-size:0.8em; padding-top:70px">
-								Egnine for <b>large-scale data processing</b><br/>
-								<b>GraphX</b> is Spark's API for graph-parallel computation
-							</p>
-						</div>
-						<div class="fragment" style="clear:both">
-							<p style="float:left"> <img src="resources/akka.png" style="border:none; box-shadow:none" width="150px" /> </p>
-							<p style="text-align:left; margin-left: 180px; font-size:0.8em; padding-top:45px">
-								Framework to build <b>actor-based</b> concurrent systems
-							</p>
-
-						</div>
-						<div class="fragment" style="clear:both">
-							<p style="float:left"> <img src="resources/kafka.png" style="border:0; box-shadow:none" width="150px" /> </p>
-							<p style="text-align:left; margin-left: 180px; font-size:0.8em; padding-top:52px">
-								Distributed <b>log-based</b> messaging 	system
-							</p>
-						</div>
-					</section>
-
 					<section data-background="resources/god.jpg">
 						<h1 style="color:white;">God</h1>
 					</section>
