@@ -1,78 +1,78 @@
 <!doctype html>
 <html lang="en">
 
-	<head>
-		<meta charset="utf-8">
+    <head>
+        <meta charset="utf-8">
 
-		<title>BigData.be Meetup</title>
+        <title>BigData.be Meetup</title>
 
-		<meta name="description" content="Big data technologies used at Real Impact Analytics">
-		<meta name="author" content="Floran Hachez">
+        <meta name="description" content="Big data technologies used at Real Impact Analytics">
+        <meta name="author" content="Floran Hachez">
 
-		<meta name="apple-mobile-web-app-capable" content="yes" />
-		<meta name="apple-mobile-web-app-status-bar-style" content="black-translucent" />
+        <meta name="apple-mobile-web-app-capable" content="yes" />
+        <meta name="apple-mobile-web-app-status-bar-style" content="black-translucent" />
 
-		<meta name="viewport" content="width=device-width, initial-scale=1.0, maximum-scale=1.0, user-scalable=no, minimal-ui">
+        <meta name="viewport" content="width=device-width, initial-scale=1.0, maximum-scale=1.0, user-scalable=no, minimal-ui">
 
-		<link rel="stylesheet" href="css/reveal.css">
-		<link rel="stylesheet" href="css/theme/beige.css" id="theme">
-		<link rel="stylesheet" href="css/theme/karim.css" id="theme">
-		<link rel="stylesheet" href="css/theme/floran.css" id="theme">
-		<link rel="stylesheet" href="css/viz/viz.css">
-		<link rel="stylesheet" href="node_modules/font-awesome/css/font-awesome.css">
-		<!-- For syntax highlighting -->
-		<link rel="stylesheet" href="lib/css/monokai_sublime.css">
+        <link rel="stylesheet" href="css/reveal.css">
+        <link rel="stylesheet" href="css/theme/beige.css" id="theme">
+        <link rel="stylesheet" href="css/theme/karim.css" id="theme">
+        <link rel="stylesheet" href="css/theme/floran.css" id="theme">
+        <link rel="stylesheet" href="css/viz/viz.css">
+        <link rel="stylesheet" href="node_modules/font-awesome/css/font-awesome.css">
+        <!-- For syntax highlighting -->
+        <link rel="stylesheet" href="lib/css/monokai_sublime.css">
 
-		<!-- Include the appropriate print stylesheet -->
-		<script>
-			var link = document.createElement( 'link' );
-			link.rel = 'stylesheet';
-			link.type = 'text/css';
-			link.href = window.location.search.match( /print-pdf/gi ) ? 'css/print/pdf.css' : 'css/print/paper.css';
-			document.getElementsByTagName( 'head' )[0].appendChild( link );
-		</script>
-		<!--[if lt IE 9]>
-		<script src="lib/js/html5shiv.js"></script>
-		<![endif]-->
-	</head>
+        <!-- Include the appropriate print stylesheet -->
+        <script>
+            var link = document.createElement( 'link' );
+            link.rel = 'stylesheet';
+            link.type = 'text/css';
+            link.href = window.location.search.match( /print-pdf/gi ) ? 'css/print/pdf.css' : 'css/print/paper.css';
+            document.getElementsByTagName( 'head' )[0].appendChild( link );
+        </script>
+        <!--[if lt IE 9]>
+        <script src="lib/js/html5shiv.js"></script>
+        <![endif]-->
+    </head>
 
-	<body>
+    <body>
 
-		<div class="reveal">
+        <div class="reveal">
 
-			<!-- Any section element inside of this container is displayed as a slide -->
-			<div class="slides">
-					<section>
-					<h2>Country-scale Telecom simulator<br />with <span style="color: orange">Spark + Akka + Kafka</span></h2>
-					<h4>
-						<a target="_blank" style="color: black;" href="https://be.linkedin.com/in/floranhachez">Floran Hachez</a>
-					</h4>
-				</section>
+            <!-- Any section element inside of this container is displayed as a slide -->
+            <div class="slides">
+                <section>
+                    <h2>Country-scale Telecom simulator<br />with <span style="color: orange">Spark + Akka + Kafka</span></h2>
+                    <h4>
+                        <a target="_blank" style="color: black;" href="https://be.linkedin.com/in/floranhachez">Floran Hachez</a>
+                    </h4>
+                </section>
 
-				<section style="font-size: 80%;">
-					<section>
-					  <h2>Who am I?</h2>
-						<img class="presentationImage" src="resources/floran.jpg" width="300px" style="float:left; margin-top:50px">
-						<ul style="list-style-type: none; margin-left:-60px; margin-top:0px">
-							<li class="">
-								<img class="presentationImage" src="resources/uclouvain.gif" width="100px" style="float:right;padding-top:20px">
+                <section style="font-size: 80%;">
+                    <section>
+                        <h2>Who am I?</h2>
+                        <img class="presentationImage" src="resources/floran.jpg" width="300px" style="float:left; margin-top:50px">
+                        <ul style="list-style-type: none; margin-left:-60px; margin-top:0px">
+                            <li class="">
+                                <img class="presentationImage" src="resources/uclouvain.gif" width="100px" style="float:right;padding-top:20px">
                                 <p style="padding-top:20px"> <b>Computer Engineering </b>
                                     <br /> <span style="font-size: 80%"> Artificial Intelligence and Applied Mathematics </span></p>
-							</li>
-							<li class="">
-								<img class="presentationImage" src="resources/trinity.jpeg" width="100px" style="float:right;padding-top:10px">
+                            </li>
+                            <li class="">
+                                <img class="presentationImage" src="resources/trinity.jpeg" width="100px" style="float:right;padding-top:10px">
                                 <p style="padding-top:20px"><b> Erasmus student</b>
                                     <br /><span style="font-size: 80%"> For one semester </span></p>
-							</li>
-							<li style="clear:right; margin-top:50px" class="">
-								<img class="presentationImage" src="resources/RIA-Logo.png" width="180px" style="float:right;margin-top:-7px">
+                            </li>
+                            <li style="clear:right; margin-top:50px" class="">
+                                <img class="presentationImage" src="resources/RIA-Logo.png" width="180px" style="float:right;margin-top:-7px">
                                 <p style="padding-top:0px;"> <b>Summer internship</b> </p>
-							</li>
-						</ul>
-					</section>
-				</section>
+                            </li>
+                        </ul>
+                    </section>
+                </section>
 
-				<section>
+                <section>
                     <section style="font-size: 100%;">
                         <h2>What am I going to talk about ?</h2>
                         <ul style="width: 500px; text-align: left; list-style-type: circle; margin-left:-0px; margin-top:40px">
@@ -99,43 +99,47 @@
 
                     <section >
                         <h2 > <strong style="color:orange">Apache Kafka</strong> is</br> publish-subscribe messaging rethought as a distributed commit log.
-                       </h2> 
+                        </h2> 
                     </section>
                     <section >
                         <h2 > <strong style="color:orange">Publish-subscribe messaging</strong> rethought as a distributed commit log.
-                       </h2> 
+                        </h2> 
                         <img class="presentationImage" src="./resources/KafkaPublishSubscribe.png" width="800px"> 
                     </section>
 
                     <section >
                         <h2 > <strong style="color:orange">Publish-subscribe messaging</strong> rethought as a distributed commit log.
-                        <img class="presentationImage" src="./resources/KafkaTopics.png" width="800px"> 
-                       </h2> 
+                            <img class="presentationImage" src="./resources/KafkaTopics.png" width="800px"> 
+                        </h2> 
                     </section>
                     <section >
                         <h2 > Publish-subscribe messaging rethought as a <strong style="color:orange">distributed</strong> commit log.
-                       </h2> 
-                        <img class="presentationImage" src="./resources/log_anatomy.png" width="700px"> 
-                    <p><cite>Image from <a href="http://kafka.apache.org/documentation.html" target=""> kafka.apache.org</a></cite></p>
+                        </h2> 
+                        <img class="presentationImage" src="./resources/log_anatomy.png" width="500px"> 
+                        <p style="font-size: 50%; margin-top:-20px"><cite>Image from <a href="http://kafka.apache.org/documentation.html" target=""> kafka.apache.org</a></cite></p>
+                        <ul >
+                            <li>Partitions are replicated N times</li>
+                            <li>Up to N-1 failure</li>
+                        </ul>
                     </section>
-                    <section >
+                    <section>
                         <h2 > Publish-subscribe messaging rethought as a <strong style="color:orange">distributed</strong> commit log.
-                       </h2> 
-                       <img class="presentationImage" src="./resources/consumer-groups.png" width="800px"> 
-                       <p><cite>Image from <a href="http://kafka.apache.org/documentation.html" target=""> kafka.apache.org</a></cite></p>
+                        </h2> 
+                        <img class="presentationImage" src="./resources/consumer-groups.png" width="700px"> 
+                        <p style="font-size: 50%; margin-top:-20px"><cite>Image from <a href="http://kafka.apache.org/documentation.html" target=""> kafka.apache.org</a></cite></p>
                     </section>
                     <section >
                         <h2 > Publish-subscribe messaging rethought as a distributed<strong style="color:orange"> commit log</strong>.
-                       </h2> 
+                        </h2> 
                         <ul style="float:center; width:600px">
                             <li class="useCase">Messages are commit when there are copied
-                                on <strong style="color:orange">N</strong> broker</li>    
+                                on <strong style="color:orange">all alive</strong> follower for the partition</li>    
                             <li class="useCase">Consumers read only committed messages </li>    
                             <li class="useCase">A producer can send the message  <strong style="color:orange">synchronously or asynchronously </strong></li>    
                         </ul>
                     </section>
 
-					<section>
+                    <section>
                         <h2 class="" >Use cases</h2>
                         <ul style="float:center; width:600px">
                             <li class="useCase">Messaging</li>    
@@ -145,11 +149,13 @@
                             <li class="useCase">Event sourcing</li>    
                         </ul>
                     </section>
-					<section>
+                    <section>
                         <h2 class="" >Summary</h2>
                         <ul style="float:center; width:600px">
-                            <li class="useCase">Messaging</li>    
-                            <li class="useCase">Website activity tracking </li>    
+                            <li class="useCase">Fast</li>    
+                            <li class="useCase">Scalable </li>    
+                            <li class="useCase">Durable </li>    
+                            <li class="useCase">Distributed by design </li>    
                         </ul>
                     </section>
                 </section>
@@ -159,33 +165,39 @@
                         <img class="presentationImage" src="resources/akka.png" width="500px" style="float: center;"> 
                     </section>
                     <section >
-                        <h2>Allows us to build </br> reactive, parallel, distributed and resilient applications  </h2>
+                        <h2>Allows us to build application that are: </h2>
+                        <ul style="float:center; width:600px">
+                            <li class="useCase">Reactive</li>    
+                            <li class="useCase">Parallel</li>    
+                            <li class="useCase">Distributed</li>    
+                            <li class="useCase">Resilient </li>    
+                        </ul>
                     </section>
-                    
+
                     <!-- ACTOR -->
-					<section data-transition="fade-in">
+                    <section data-transition="fade-in">
                         <h1 class="slideTitle" >Actor</h1>
                         <img class="presentationImage" src="./resources/ActorMailBox.png" width="800px"> 
                     </section>
-					<section data-transition="fade-in">
+                    <section data-transition="fade-in">
                         <h1 class="slideTitle" >Actor</h1>
                         <img class="presentationImage" src="./resources/ActorReceive.png" width="800px"> 
                     </section>
-					<section data-transition="fade-in">
+                    <section data-transition="fade-in">
                         <h1 class="slideTitle" >Actor</h1>
                         <img class="presentationImage" src="./resources/ActorChangeState.png" width="800px"> 
                     </section>
-					<section data-transition="fade-in">
+                    <section data-transition="fade-in">
                         <h1 class="slideTitle" >Actor</h1>
                         <img class="presentationImage" src="./resources/ActorSend.png" width="800px"> 
                     </section>
 
                     <!-- ACTOR Hierarchy-->
-					<section>
+                    <section>
                         <h1 class="slideTitle" >Actor Hierarchy</h1>
                         <img class="presentationImage" src="./resources/ActorHierarchy.png" width="600px"> 
                     </section>
-					<section data-transition="fade-in">
+                    <section data-transition="fade-in">
                         <h1 class="slideTitle" >Actor Hierarchy</h1>
                         <img class="presentationImage" src="./resources/ActorHierarchyPath.png" width="600px"> 
                         <ul style="float:center; padding-left:7%;">
@@ -194,34 +206,40 @@
                         </ul>
                     </section>
 
-					<section>
+                    <section>
                         <h2 class="slideTitle" >Reactive</h2>
                     </section>
-					<section>
+                    <section>
                         <h2 class="slideTitle" >Parallel</h2>
                         <ul style="width:800px">
                             <li class="useCase">The actors run <strong style="color:orange"> concurrently </strong> </li>
                             <li class="useCase">An actor runs <strong style="color:orange"> on one thread at a time </strong> </li>
-                            <li class="useCase">We don't need <strong style="color:orange"> mutex, semaphore and monitor</strong> </li>
-                            <li class="useCase">Messages from one actor to another are<strong style="color:orange"> order</strong> </li>
-                            <li class="useCase">At <strong style="color:orange"> most once</strong> delivery</li>
+                            <li class="useCase">We don't need <strong style="color:orange"> mutexes, semaphores and monitors</strong> </li>
+                            <li style="margin-top:50px">Guarantees: </li>
+                            <ul>
+                                <li class="useCase">Messages from one actor to another are<strong style="color:orange"> order</strong> </li>
+                                <li class="useCase">At <strong style="color:orange"> most once</strong> delivery</li>
+                            </ul>
                         </ul>
                     </section>
-					<section>
+                    <section>
                         <h2 class="slideTitle" >Distributed</h2>
                         <ul>
-                            <li>Design for remote</li>
+                            <li>Design for distributed system</li>
                             <li>Location transparency</li>
                             <ul>
-                                <li class="useCase">Communicate with other <strong style="color:orange"> computer</strong> </li>
+                                <li class="useCase">Communicate with other <strong style="color:orange"> computers</strong> </li>
                                 <li class="useCase">Create actors in other <strong style="color:orange"> JVMs</strong> </li>
                                 <li class="useCase">Driven by <strong style="color:orange"> configuration</strong> </li>
                             </ul>
-                            <li class="useCase">Messages from one actor to another are<strong style="color:orange"> order</strong> </li>
-                            <li class="useCase">At <strong style="color:orange"> most once</strong> delivery</li>
+                            <li style="margin-top:50px">Guarantees: </li>
+                            <ul>
+                                <li class="useCase">Messages from one actor to another are<strong style="color:orange"> order</strong> </li>
+                                <li class="useCase">At <strong style="color:orange"> most once</strong> delivery</li>
+                            </ul>
                         </ul>
                     </section>
-					<section>
+                    <section>
                         <h2 class="slideTitle" >Resilient</h2>
                         <p>If there is a problem, an actor can :</p>
                         <ul>
@@ -232,334 +250,333 @@
                         </ul>
                     </section>
 
-					<section>
+                    <section>
                         <h2 class="" >Use cases</h2>
                         <ul style="float:center; width:600px">
                             <li class="useCase">Spark: Master/Worker</li>    
                             <li class="useCase">
                                 Web server 
                             </li>    
+                            <li class="useCase">Service backend </li>    
+                            <li class="useCase">Game server </li>    
                             <li class="useCase">Simulation</li>    
-                            <li class="useCase">...</li>    
-                    </section>
+                        </section>
+                        <section>
+                            <h2 class="" >Summary</h2>
+                            <ul style="float:center; width:600px">
+                                <li class="useCase">Scale up</li>    
+                                <li class="useCase">Scale out </li>    
+                                <li class="useCase">Resilient </li>    
+                            </ul>
+                        </section>
 
-                </section>
-
-                <section>
-                    <section data-state="uncenterDarkTheme" data-background="resources/ria_2.png">
-                    </section>
-                    <section>
-                        <h1>Missions</h1>
-                        <table style="font-size: 80%;">
-                            <thead>
-                                <tr>
-                                    <th>Operational optimization</th>
-                                    <th>Campaign managment</th>
-                                </tr>
-                            </thead>
-                            <tbody>
-                                <tr>
-                                    <td>
-                                        Drive field actions<br>
-                                        Improve network coverage<br>
-                                        Performance tracking<br>
-                                        Stock management<br>
-                                        Managed services<br>
-                                        Data commercialization
-                                    </td>
-                                    <td>
-                                        Improve marketing<br>
-                                        Strengthen subscriber acquisitions<br>
-                                        Acquire competitor market<br>
-                                        Increase cross-sales<br>
-                                        Reduce churn<br>
-                                        Target high value subscribers<br>
-                                        A/B test campaign messages<br>
-                                        Compute campaign's ROI
-                                    </td>
-                                </tr>
-                            </tbody>
-                        </table>
-                    </section>
-
-                    <section data-state="worldTour">
-                        <h1>Size</h1>
-                        <ul>
-                            <li class="useCase">Active in <strong style="color:orange">35+ </strong> countries</li>
-                            <li class="useCase">Treating telecom data of <strong style="color:orange">300,000,000 subscribers</strong> daily</li>
-                            <li class="useCase"><strong style="color:orange">4% </strong> of world population</li>
-                            <li class="useCase"><strong style="color:orange">10% </strong> of Africa's population</li>
-                        </ul>
                     </section>
 
                     <section>
-                        <h1>Data</h1>
-                        <table>
-                            <tbody>
-                                <tr> <td> <i class="fa fa-phone fa-1x"></i> </td> <td> Call Detail Record (CDR) </td> </tr>
-                                <tr> <td> <i class="fa fa-clock-o fa-1x"></i> </td> <td> Date &mdash; Time &mdash; Duration </td> </tr>
-                                <tr> <td> <i class="fa fa-dollar fa-1x"></i> </td> <td> Billing &mdash; Recharge &mdash; Money transfer </td> </tr>
-                                <tr> <td> <i class="fa fa-group fa-1x"></i> </td> <td> Social Network </td> </tr>
-                                <tr> <td> <i class="fa fa-globe fa-1x"></i> </td> <td> Antenna's geolocalisation </td> </tr>
-                                <tr> <td> <i class="fa fa-signal fa-1x"></i> </td> <td> Network information </td> </tr>
-                            </tbody>
-                        </table>
+                        <section data-state="uncenterDarkTheme" data-background="resources/ria_2.png">
+                        </section>
+                        <section>
+                            <h1>Missions</h1>
+                            <table style="font-size: 80%;">
+                                <thead>
+                                    <tr>
+                                        <th>Operational optimization</th>
+                                        <th>Campaign managment</th>
+                                    </tr>
+                                </thead>
+                                <tbody>
+                                    <tr>
+                                        <td>
+                                            Drive field actions<br>
+                                            Improve network coverage<br>
+                                            Performance tracking<br>
+                                            Stock management<br>
+                                            Managed services<br>
+                                            Data commercialization
+                                        </td>
+                                        <td>
+                                            Improve marketing<br>
+                                            Strengthen subscriber acquisitions<br>
+                                            Acquire competitor market<br>
+                                            Increase cross-sales<br>
+                                            Reduce churn<br>
+                                            Target high value subscribers<br>
+                                            A/B test campaign messages<br>
+                                            Compute campaign's ROI
+                                        </td>
+                                    </tr>
+                                </tbody>
+                            </table>
+                        </section>
+
+                        <section data-state="worldTour">
+                            <h1>Size</h1>
+                            <ul>
+                                <li class="useCase">Active in <strong style="color:orange">35+ </strong> countries</li>
+                                <li class="useCase">Treating telecom data of <strong style="color:orange">300,000,000 subscribers</strong> daily</li>
+                                <li class="useCase"><strong style="color:orange">4% </strong> of world population</li>
+                                <li class="useCase"><strong style="color:orange">10% </strong> of Africa's population</li>
+                            </ul>
+                        </section>
+
+                        <section>
+                            <h1>Data</h1>
+                            <table>
+                                <tbody>
+                                    <tr> <td> <i class="fa fa-phone fa-1x"></i> </td> <td> Call Detail Record (CDR) </td> </tr>
+                                    <tr> <td> <i class="fa fa-clock-o fa-1x"></i> </td> <td> Date &mdash; Time &mdash; Duration </td> </tr>
+                                    <tr> <td> <i class="fa fa-dollar fa-1x"></i> </td> <td> Billing &mdash; Recharge &mdash; Money transfer </td> </tr>
+                                    <tr> <td> <i class="fa fa-group fa-1x"></i> </td> <td> Social Network </td> </tr>
+                                    <tr> <td> <i class="fa fa-globe fa-1x"></i> </td> <td> Antenna's geolocalisation </td> </tr>
+                                    <tr> <td> <i class="fa fa-signal fa-1x"></i> </td> <td> Network information </td> </tr>
+                                </tbody>
+                            </table>
+                        </section>
+                        <section>
+                            <h2>What do we struggle with?</h2>
+                            <ul>
+                                <li class="">Benchmarking</li>
+                                <li class="">Stress testing for data quantity increase</li>
+                                <li class="">Prepare for worst case scenario</li>
+                                <li class="">Convince prospect</li>
+                            </ul>
+                        </section>
+                        <section>
+                            <h2>Solution?</h2>
+                            <p class=""> Simulate a real world telecommunication provider </p>
+                        </section>
+                        <section>
+                            <h2>Requirements</h2>
+                            <ul>
+                                <li class="" style="padding-bottom: 30px">Be as close as possible to <span style="color: orange;">reality</span><br />
+                                    <span style="color: grey;">social behaviours, mobility paterns, activity distibutions, ...</span></li>
+                                <li class="">Be able to simulate the <span style="color: orange;">bigest telco</span> providers<br />
+                                    <span style="color: grey;">China Mobile: 800M subscribers<br /></li>
+                                </ul>
+                            </section>
+                        </section>
+
+                        <section>
+                            <section data-background="resources/telcoSim.jpg">
+                                <h1 style="color:white;">Telco Simulator</h1>
+                            </section>
+                            <section>
+                                <h2>Genesis</h2>
+                                <p><img src="resources/hackaton.jpg" height="500px"></p>
+                            </section>
+                            <section>
+                                <h2>What did we build?</h2>
+                                <div style="margin-top:100px">
+                                    <div style="width:500px; float:right" class="" data-fragment-index="2">
+                                        <h3>Nature</h3>
+                                        <img src="resources/akka.png" style="border:0; box-shadow:none" width="200px" /> <br/>
+                                        <img src="resources/kafka.png" style="border:0; box-shadow:none" width="200px" />
+                                    </div>
+                                    <div style="width:500px; margin" class="" data-fragment-index="1">
+                                        <h3>God</h3>
+                                        <img src="resources/spark-logo.png" style="border:0; box-shadow:none; margin-top:30px" width="200px" />
+                                    </div>
+                                </div>
+                            </section>
+                            <section data-background="resources/god.jpg">
+                                <h1 style="color:white;">God</h1>
+                            </section>
+
+                            <section>
+                                <h2>God creates the world</h2>
+                                <ul style="margin-top:70px;">
+                                    <li class="">the <span style="color: orange;">antennas</span> based on the geography</li>
+                                    <li class="" style="margin-top:30px;">the <span style="color: orange;">subscribers</span> based on
+                                        <ul>
+                                            <li>operators + number of subs</li>
+                                            <li>profiles for each operator (social + mobility)</li>
+                                            <li>geographical distribution of the population</li>
+                                        </ul>
+                                    </li>
+                                    <li class="" style="margin-top:30px;">the <span style="color: orange;">social graph</span> based on social profiles</li>
+                                </ul>
+                            </section>
+
+                            <section data-background="resources/nature.jpg">
+                                <h1 style="color:white;">Nature</h1>
+                            </section>
+
+                            <section>
+                                <h2>Nature brings it to life</h2>
+                            </section>
+                            <section data-transition="fade-in">
+                                <img src="resources/agents/agents.001.png" style="border:none; box-shadow:none" />
+                            </section>
+                            <section data-transition="fade-in">
+                                <img src="resources/agents/agents.002.png" style="border:none; box-shadow:none" />
+                            </section>
+                            <section data-transition="fade-in">
+                                <img src="resources/agents/agents.003.png" style="border:none; box-shadow:none" />
+                            </section>
+                            <section data-transition="fade-in">
+                                <img src="resources/agents/agents.003b.jpg" style="border:none; box-shadow:none" />
+                            </section>
+                            <section data-transition="fade-in">
+                                <img src="resources/agents/agents.004.png" style="border:none; box-shadow:none" />
+                            </section>
+                            <section data-transition="fade-in">
+                                <img src="resources/agents/agents.005.png" style="border:none; box-shadow:none" />
+                            </section>
+                            <section data-transition="fade-in">
+                                <img src="resources/agents/agents.006.png" style="border:none; box-shadow:none" />
+                            </section>
+                            <section data-transition="fade-in">
+                                <img src="resources/agents/agents.007.png" style="border:none; box-shadow:none" />
+                            </section>
+                            <section data-transition="fade-in">
+                                <img src="resources/agents/agents.008.png" style="border:none; box-shadow:none" />
+                            </section>
+
+                            <section>
+                                <img src="resources/kafka_stream.png" style="border:none; box-shadow:none" />
+                            </section>
+
+                            <section>
+                                <h2>Synchronisation : <span style="color: orange;">Async</span></h2>
+                                <ul style="font-size:0.8em">
+                                    <li class="" style="padding-top:0px">The clock sends the time to everyone</li>
+                                    <li class="" style="padding-top:0px">Every actor advances at his own pace (his message queue)</li>
+                                    <li class="" style="padding-top:30px">Simple</li>
+                                    <li class="fragment" style="padding-top:0px">But we can't make any supposition about time ...</li>
+                                </ul>
+                                <img src="resources/async.png" style="border:none; box-shadow:none; padding-top:30px" width="500px" class="fragment" />
+                            </section>
+
+                            <section>
+                                <h2>Synchronisation : <span style="color: orange;">Sync</span></h2>
+                                <ul style="font-size:0.8em">
+                                    <li class="" style="padding-top:0px">The clock waits for eveybody to finish<br/>before sending the next tick</li>
+                                    <li class="" style="padding-top:30px">As slow as the slowest actor</li>
+                                    <li class="fragment" style="padding-top:0px">We can make suppositions about time</li>
+                                </ul>
+                                <img src="resources/sync.png" style="border:none; box-shadow:none; padding-top:30px" width="500px" class="fragment" />
+                            </section>
+
+                            <section>
+                                <h2>Future challenges</h2>
+                                <ul>
+                                    <li class="" style="padding-top:30px"><span style="color: orange;">synchronisation</span><br />is everybody at the same time ?</li>
+                                    <li class="" style="padding-top:30px"><span style="color: orange;">mobility</span><br />who is where ?</li>
+                                </ul>
+                            </section>
+
+                        </section>
+
+
+                        <!--<section data-background="resources/sayBigData.jpg">
+                </section>-->
+
                     </section>
+
                     <section>
-                        <h2>What do we struggle with?</h2>
-                        <ul>
-                            <li class="fragment">Benchmarking</li>
-                            <li class="fragment">Stress testing for data quantity increase</li>
-                            <li class="fragment">Prepare for worst case scenario</li>
-                            <li class="fragment">Convince prospect</li>
-                        </ul>
+                        <svg width="640" height="300" xmlns="http://www.w3.org/2000/svg">
+                            <title>black Star Glasses</title>
+                            <metadata id="metadata7">image/svg+xml</metadata>
+                            <g>
+                            <title>Layer 1</title>
+                            <path d="m445.72406,86.045715c-37.811279,0.253937 -74.24823,12.123665 -111.362091,16.8703c-15.489655,1.981148 -31.454407,2.466522 -46.970093,0.624634c-20.629822,-2.449356 -40.603043,-8.955338 -61.219223,-11.871849c-18.424255,-2.604774 -37.078735,-5.326279 -55.618668,-5.434509c-32.400101,-0.192863 -63.735413,9.994659 -95.497093,15.495583c0,9.330353 -1.888023,21.307236 2.860909,27.865662c4.898636,6.764206 13.161667,12.950882 15.304817,22.117264c5.082314,21.740097 12.298714,43.050537 21.525597,63.48024c4.483597,9.928223 12.946198,16.849899 22.396454,21.61795c22.757065,11.481857 49.691574,13.170486 74.656403,9.559631c35.552444,-5.141983 54.840805,-31.9319 69.555923,-62.542679c5.507599,-12.442932 6.122192,-26.803879 13.376007,-38.176422c4.307831,-6.753479 14.312561,-3.910828 21.462097,-3.935516c7.150635,-0.024628 13.211548,11.919037 15.429535,19.869354c7.853668,28.134583 20.947266,57.984634 46.971222,72.725891c38.861298,22.014374 100.085052,17.896744 125.299316,-21.805481c9.867584,-15.538422 12.592499,-34.3909 17.543243,-51.982269c3.013977,-10.710403 5.707092,-23.47908 16.425049,-29.366791c4.32489,-2.376541 1.289368,-11.857956 1.927734,-17.369583c0.696289,-6.004509 2.03772,-11.316864 -6.470276,-12.495476c-14.838745,-2.058281 -29.232941,-8.315689 -44.4198,-10.433968c-14.391998,-2.007927 -28.492554,-4.909439 -43.177063,-4.811966zm-249.973877,9.996819c10.733856,-0.06752 21.421265,0.7211 31.8535,2.936897c62.158127,13.203697 63.414536,38.923218 37.826004,92.096985c-20.850906,43.326981 -64.043854,54.183075 -107.566757,43.797348c-20.063965,-4.78627 -33.782387,-18.85141 -40.252647,-38.112137c-6.829735,-20.328979 -11.994827,-41.926544 -10.825729,-63.293793c1.567093,-28.610336 33.790306,-32.631584 56.863731,-35.238449c10.587601,-1.195755 21.36911,-2.118286 32.101898,-2.186852zm226.954834,0c10.733887,0.068565 21.515411,0.991096 32.103027,2.186852c23.072235,2.606865 55.29776,6.628113 56.86261,35.238449c1.169067,21.367249 -3.996063,42.964813 -10.825714,63.293793c-6.470337,19.260727 -20.188721,33.325867 -40.251556,38.112137c-43.521759,10.385727 -86.715851,-0.470367 -107.567902,-43.797348c-25.588501,-53.173767 -24.330963,-78.893288 37.827148,-92.096985c10.432281,-2.215797 21.119659,-3.004417 31.852386,-2.936897z" stroke-width="5" stroke="#000000" fill="#000000" id="path2830"/>
+                            </g>
+                        </svg>
+                        <h1>Thank you for your attention</h1>
                     </section>
-                    <section>
-                        <h2>Solution?</h2>
-                        <p class="fragment"> Simulate a real world telecommunication provider </p>
-                    </section>
-					<section>
-						<h2>Requirements</h2>
-						<ul>
-							<li class="fragment" style="padding-bottom: 30px">Be as close as possible to <span style="color: orange;">reality</span><br />
-								<span style="color: grey;">social behaviours, mobility paterns, activity distibutions, ...</span></li>
-							<li class="fragment">Be able to simulate the <span style="color: orange;">bigest telco</span> providers<br />
-								<span style="color: grey;">China Mobile: 800M subscribers<br /></li>
-						</ul>
-					</section>
-                </section>
+                </div>
 
-				<section>
-					<section data-background="resources/telcoSim.jpg">
-						<h1 style="color:white;">Telco Simulator</h1>
-					</section>
-					<section>
-						<h2>Genesis</h2>
-						<p><img src="resources/hackaton.jpg" height="500px"></p>
-					</section>
-					<section>
-						<h2>What did we build?</h2>
-						<div style="margin-top:100px">
-							<div style="width:500px; float:right" class="fragment" data-fragment-index="2">
-								<h3>Nature</h3>
-								<img src="resources/akka.png" style="border:0; box-shadow:none" width="200px" /> <br/>
-								<img src="resources/kafka.png" style="border:0; box-shadow:none" width="200px" />
-							</div>
-							<div style="width:500px; margin" class="fragment" data-fragment-index="1">
-								<h3>God</h3>
-								<img src="resources/spark-logo.png" style="border:0; box-shadow:none; margin-top:30px" width="200px" />
-							</div>
-						</div>
-					</section>
-					<section data-background="resources/god.jpg">
-						<h1 style="color:white;">God</h1>
-					</section>
+            </div>
 
-					<section>
-						<h2>God creates the world</h2>
-						<ul style="margin-top:70px;">
-							<li class="fragment">the <span style="color: orange;">antennas</span> based on the geography</li>
-							<li class="fragment" style="margin-top:30px;">the <span style="color: orange;">subscribers</span> based on
-								<ul>
-									<li>operators + number of subs</li>
-									<li>profiles for each operator (social + mobility)</li>
-									<li>geographical distribution of the population</li>
-								</ul>
-							</li>
-							<li class="fragment" style="margin-top:30px;">the <span style="color: orange;">social graph</span> based on social profiles</li>
-													</ul>
-					</section>
+            <script src="lib/js/head.min.js"></script>
+            <script src="js/reveal.js"></script>
+            <script src="js/d3.min.js"></script>
+            <script src="js/topojson.v1.min.js"></script>
+            <script src="js/queue.v1.min.js"></script>
+            <script src="node_modules/underscore/underscore.js"></script>
 
-					<section data-background="resources/nature.jpg">
-						<h1 style="color:white;">Nature</h1>
-					</section>
+            <!-- Visualisation -->
+            <script type="text/javascript" src="js/viz/worldtour/worldtour.js"></script>
+            <script type="text/javascript" src="js/viz/worldRatio.js"></script>
+            <script type="text/javascript" src="js/viz/fullMixModel.js"></script>
+            <script type="text/javascript" src="js/viz/mobilityModel.js"></script>
+            <script type="text/javascript" src="js/viz/hybridModel.js"></script>
 
-					<section>
-						<h2>Nature brings it to life</h2>
-					</section>
-					<section data-transition="fade-in">
-						<img src="resources/agents/agents.001.png" style="border:none; box-shadow:none" />
-					</section>
-					<section data-transition="fade-in">
-						<img src="resources/agents/agents.002.png" style="border:none; box-shadow:none" />
-					</section>
-					<section data-transition="fade-in">
-						<img src="resources/agents/agents.003.png" style="border:none; box-shadow:none" />
-					</section>
-					<section data-transition="fade-in">
-						<img src="resources/agents/agents.003b.jpg" style="border:none; box-shadow:none" />
-					</section>
-					<section data-transition="fade-in">
-						<img src="resources/agents/agents.004.png" style="border:none; box-shadow:none" />
-					</section>
-					<section data-transition="fade-in">
-						<img src="resources/agents/agents.005.png" style="border:none; box-shadow:none" />
-					</section>
-					<section data-transition="fade-in">
-						<img src="resources/agents/agents.006.png" style="border:none; box-shadow:none" />
-					</section>
-					<section data-transition="fade-in">
-						<img src="resources/agents/agents.007.png" style="border:none; box-shadow:none" />
-					</section>
-					<section data-transition="fade-in">
-						<img src="resources/agents/agents.008.png" style="border:none; box-shadow:none" />
-					</section>
+            <script>
 
-					<section>
-						<img src="resources/kafka_stream.png" style="border:none; box-shadow:none" />
-					</section>
+                // Full list of configuration options available here:
+                // https://github.com/hakimel/reveal.js#configuration
+            Reveal.initialize({
+controls: true,
+progress: true,
+center: true,
+history: true,
+touch: true,
 
-					<section>
-						<h2>Future challenges</h2>
-						<ul>
-							<li class="fragment" style="padding-top:30px"><span style="color: orange;">mobility</span><br />who is where ?</li>
-							<li class="fragment" style="padding-top:30px"><span style="color: orange;">synchronisation</span><br />is eveybody at the same time ?</li>
-						</ul>
-					</section>
+theme: Reveal.getQueryHash().theme, // available themes are in /css/theme
+transition: Reveal.getQueryHash().transition || 'default', // default/cube/page/concave/zoom/linear/fade/none
 
-					<section>
-						<h2>Synchronisation : <span style="color: orange;">Async</span></h2>
-						<ul style="font-size:0.8em">
-							<li class="fragment" style="padding-top:0px">The clock sends the time to everyone</li>
-							<li class="fragment" style="padding-top:0px">Every actor advances at his own pace (his message queue)</li>
-							<li class="fragment" style="padding-top:30px">Simple</li>
-							<li class="fragment" style="padding-top:0px">But we can't make any supposition about time ...</li>
-						</ul>
-						<img src="resources/async.png" style="border:none; box-shadow:none; padding-top:30px" width="500px" class="fragment" />
-					</section>
+// Optional libraries used to extend on reveal.js
+dependencies: [
+{ src: 'lib/js/classList.js', condition: function() { return !document.body.classList; } },
+{ src: 'plugin/markdown/marked.js', condition: function() { return !!document.querySelector( '[data-markdown]' ); } },
+{ src: 'plugin/markdown/markdown.js', condition: function() { return !!document.querySelector( '[data-markdown]' ); } },
+{ src: 'plugin/highlight/highlight.js', async: true, condition: function() { return !!document.querySelector( 'pre code' ); }, callback: function() { hljs.initHighlightingOnLoad(); } },
+{ src: 'plugin/zoom-js/zoom.js', async: true },
+{ src: 'plugin/notes/notes.js', async: true },
+{ src: 'plugin/timeline/reveal-timeline.js',  async: true, condition: function() { return 1; } }
+]
+});
 
-					<section>
-						<h2>Synchronisation : <span style="color: orange;">Sync</span></h2>
-						<ul style="font-size:0.8em">
-							<li class="fragment" style="padding-top:0px">The clock waits for eveybody to finish<br/>before sending the next tick</li>
-							<li class="fragment" style="padding-top:0px">Every actor advances at the same pace</li>
-							<li class="fragment" style="padding-top:30px">As slow as the slowest actor</li>
-							<li class="fragment" style="padding-top:0px">We can make suppositions about time</li>
-						</ul>
-						<img src="resources/sync.png" style="border:none; box-shadow:none; padding-top:30px" width="500px" class="fragment" />
-					</section>
+Reveal.addEventListener( 'slidechanged', function( event ) {
+        Reveal.configure(currentConfig);
+        currentConfig = setToDefault();
+        } );
 
-					<section>
-						<script async src="//platform.twitter.com/widgets.js" charset="utf-8"></script>
+var setToDefault = function(){
+    return {center: true, theme: 'karim'};
+}
 
-						<h2>Synchronisation : <span style="color: orange;">Sync</span></h2>
-						<blockquote class="twitter-tweet tw-align-center" lang="en"><p lang="en" dir="ltr">Relying on synchronized clocks in a distributed system is an anti-pattern <a href="https://twitter.com/jboner">@jboner</a></p>&mdash; Nitro Engineering (@NitroEng) <a href="https://twitter.com/NitroEng/status/633835863219154944">August 19, 2015</a></blockquote>
-						<p></p>
-						<blockquote class="twitter-tweet tw-align-center" lang="en"><p lang="en" dir="ltr">The cost of maintaining the illusion of time in distributed systems increases with consistency and coherence - <a href="https://twitter.com/hashtag/reactive?src=hash">#reactive</a> by <a href="https://twitter.com/jboner">@jboner</a></p>&mdash; Nitro Engineering (@NitroEng) <a href="https://twitter.com/NitroEng/status/633827207366840320">August 19, 2015</a></blockquote>
-					</section>	
+var currentConfig = setToDefault();
 
-				</section>
+Reveal.addEventListener( 'uncenter', function() {
+        currentConfig.center = false;
+        } );
 
+Reveal.addEventListener( 'darkTheme', function() {
+        currentConfig.theme = 'karimBlack';
+        } );
 
-				<!--<section data-background="resources/sayBigData.jpg">
-				</section>-->
+Reveal.addEventListener( 'uncenterDarkTheme', function() {
+        currentConfig.center = false;
+        currentConfig.theme = 'karimBlack';
+        } );
 
-				</section>
+Reveal.addEventListener( 'worldTour', function() {
+        worldTour();
+        } );
 
-				<section>
-					<svg width="640" height="300" xmlns="http://www.w3.org/2000/svg">
-					  <title>black Star Glasses</title>
-					  <metadata id="metadata7">image/svg+xml</metadata>
-					  <g>
-					    <title>Layer 1</title>
-					    <path d="m445.72406,86.045715c-37.811279,0.253937 -74.24823,12.123665 -111.362091,16.8703c-15.489655,1.981148 -31.454407,2.466522 -46.970093,0.624634c-20.629822,-2.449356 -40.603043,-8.955338 -61.219223,-11.871849c-18.424255,-2.604774 -37.078735,-5.326279 -55.618668,-5.434509c-32.400101,-0.192863 -63.735413,9.994659 -95.497093,15.495583c0,9.330353 -1.888023,21.307236 2.860909,27.865662c4.898636,6.764206 13.161667,12.950882 15.304817,22.117264c5.082314,21.740097 12.298714,43.050537 21.525597,63.48024c4.483597,9.928223 12.946198,16.849899 22.396454,21.61795c22.757065,11.481857 49.691574,13.170486 74.656403,9.559631c35.552444,-5.141983 54.840805,-31.9319 69.555923,-62.542679c5.507599,-12.442932 6.122192,-26.803879 13.376007,-38.176422c4.307831,-6.753479 14.312561,-3.910828 21.462097,-3.935516c7.150635,-0.024628 13.211548,11.919037 15.429535,19.869354c7.853668,28.134583 20.947266,57.984634 46.971222,72.725891c38.861298,22.014374 100.085052,17.896744 125.299316,-21.805481c9.867584,-15.538422 12.592499,-34.3909 17.543243,-51.982269c3.013977,-10.710403 5.707092,-23.47908 16.425049,-29.366791c4.32489,-2.376541 1.289368,-11.857956 1.927734,-17.369583c0.696289,-6.004509 2.03772,-11.316864 -6.470276,-12.495476c-14.838745,-2.058281 -29.232941,-8.315689 -44.4198,-10.433968c-14.391998,-2.007927 -28.492554,-4.909439 -43.177063,-4.811966zm-249.973877,9.996819c10.733856,-0.06752 21.421265,0.7211 31.8535,2.936897c62.158127,13.203697 63.414536,38.923218 37.826004,92.096985c-20.850906,43.326981 -64.043854,54.183075 -107.566757,43.797348c-20.063965,-4.78627 -33.782387,-18.85141 -40.252647,-38.112137c-6.829735,-20.328979 -11.994827,-41.926544 -10.825729,-63.293793c1.567093,-28.610336 33.790306,-32.631584 56.863731,-35.238449c10.587601,-1.195755 21.36911,-2.118286 32.101898,-2.186852zm226.954834,0c10.733887,0.068565 21.515411,0.991096 32.103027,2.186852c23.072235,2.606865 55.29776,6.628113 56.86261,35.238449c1.169067,21.367249 -3.996063,42.964813 -10.825714,63.293793c-6.470337,19.260727 -20.188721,33.325867 -40.251556,38.112137c-43.521759,10.385727 -86.715851,-0.470367 -107.567902,-43.797348c-25.588501,-53.173767 -24.330963,-78.893288 37.827148,-92.096985c10.432281,-2.215797 21.119659,-3.004417 31.852386,-2.936897z" stroke-width="5" stroke="#000000" fill="#000000" id="path2830"/>
-					  </g>
-					</svg>
-					<h1>Thank you for your attention</h1>
-				</section>
-			</div>
+Reveal.addEventListener( 'worldRatio', function() {
+        worldRatio();
+        } );
 
-		</div>
+Reveal.addEventListener( 'worldRatio', function() {
+        worldRatio();
+        } );
 
-		<script src="lib/js/head.min.js"></script>
-		<script src="js/reveal.js"></script>
-		<script src="js/d3.min.js"></script>
-		<script src="js/topojson.v1.min.js"></script>
-		<script src="js/queue.v1.min.js"></script>
-		<script src="node_modules/underscore/underscore.js"></script>
+Reveal.addEventListener( 'fullMixModel', function() {
+        fullMixModel();
+        } );
 
-		<!-- Visualisation -->
-		<script type="text/javascript" src="js/viz/worldtour/worldtour.js"></script>
-		<script type="text/javascript" src="js/viz/worldRatio.js"></script>
-		<script type="text/javascript" src="js/viz/fullMixModel.js"></script>
-		<script type="text/javascript" src="js/viz/mobilityModel.js"></script>
-		<script type="text/javascript" src="js/viz/hybridModel.js"></script>
+Reveal.addEventListener( 'mobilityModel', function() {
+        mobilityModel();
+        } );
 
-		<script>
+Reveal.addEventListener( 'hybridModel', function() {
+        hybridModel();
+        } );
 
-			// Full list of configuration options available here:
-			// https://github.com/hakimel/reveal.js#configuration
-			Reveal.initialize({
-				controls: true,
-				progress: true,
-				center: true,
-				history: true,
-				touch: true,
-
-				theme: Reveal.getQueryHash().theme, // available themes are in /css/theme
-				transition: Reveal.getQueryHash().transition || 'default', // default/cube/page/concave/zoom/linear/fade/none
-
-				// Optional libraries used to extend on reveal.js
-				dependencies: [
-				  { src: 'lib/js/classList.js', condition: function() { return !document.body.classList; } },
-					{ src: 'plugin/markdown/marked.js', condition: function() { return !!document.querySelector( '[data-markdown]' ); } },
-					{ src: 'plugin/markdown/markdown.js', condition: function() { return !!document.querySelector( '[data-markdown]' ); } },
-					{ src: 'plugin/highlight/highlight.js', async: true, condition: function() { return !!document.querySelector( 'pre code' ); }, callback: function() { hljs.initHighlightingOnLoad(); } },
-					{ src: 'plugin/zoom-js/zoom.js', async: true },
-					{ src: 'plugin/notes/notes.js', async: true },
-					{ src: 'plugin/timeline/reveal-timeline.js',  async: true, condition: function() { return 1; } }
-				]
-			});
-
-			Reveal.addEventListener( 'slidechanged', function( event ) {
-				Reveal.configure(currentConfig);
-				currentConfig = setToDefault();
-			} );
-
-			var setToDefault = function(){
-				return {center: true, theme: 'karim'};
-			}
-
-			var currentConfig = setToDefault();
-
-			Reveal.addEventListener( 'uncenter', function() {
-			  currentConfig.center = false;
-			} );
-
-			Reveal.addEventListener( 'darkTheme', function() {
-				currentConfig.theme = 'karimBlack';
-			} );
-
-			Reveal.addEventListener( 'uncenterDarkTheme', function() {
-				currentConfig.center = false;
-				currentConfig.theme = 'karimBlack';
-			} );
-
-			Reveal.addEventListener( 'worldTour', function() {
-				worldTour();
-			} );
-
-			Reveal.addEventListener( 'worldRatio', function() {
-				worldRatio();
-			} );
-
-			Reveal.addEventListener( 'worldRatio', function() {
-				worldRatio();
-			} );
-
-			Reveal.addEventListener( 'fullMixModel', function() {
-				fullMixModel();
-			} );
-
-			Reveal.addEventListener( 'mobilityModel', function() {
-				mobilityModel();
-			} );
-
-			Reveal.addEventListener( 'hybridModel', function() {
-				hybridModel();
-			} );
-
-		</script>
-	</body>
-</html>
+            </script>
+        </body>
+    </html>
 
